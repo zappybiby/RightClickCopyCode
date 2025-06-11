@@ -17,9 +17,6 @@ for chats, issues, docs, or pull requests with syntax highlighting.
     ```
     ~~~
 
-2. **`Install.ps1`** compiles that script to a **silent `CopyCode.exe`** and registers
-   the context-menu entry.
-
 ---
 
 ## 🤔 Why Compile with PS2EXE?

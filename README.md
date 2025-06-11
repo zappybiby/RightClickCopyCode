@@ -8,8 +8,7 @@ for chats, issues, docs, or pull requests with syntax highlighting.
 
 ## 🔍 How It Works
 
-1. **`CopyCode.ps1`** reads the file, guesses its language from the extension, and puts
-   something like this on your clipboard:
+1. **`CopyCode.ps1`** reads the file and puts something like this on your clipboard:
 
     ~~~text
     hello.py (C:\Projects\hello.py)
@@ -18,9 +17,8 @@ for chats, issues, docs, or pull requests with syntax highlighting.
     ```
     ~~~
 
-2. **`Install.ps1`** compiles that script to a **silent `CopyCode.exe`**, registers
-   the context-menu entry, and prints a reminder that you may need to restart
-   Explorer (or log off/on) before the menu shows up.
+2. **`Install.ps1`** compiles that script to a **silent `CopyCode.exe`** and registers
+   the context-menu entry.
 
 ---
 
@@ -39,19 +37,17 @@ at all—just instant clipboard magic.
 **Inside `C:\Program Files` (or any sub-folder)**
 
 That protected path prevents non-admin users or malware from swapping out the
-executable that Explorer will run. If you launch the installer from elsewhere it
-reminds you and lets you cancel or proceed.
+executable that Explorer will run.
 
 ---
 
 # Quick Start
 
-1. **Open Windows Terminal as Administrator**  
-   - Right-click the Windows Terminal icon and choose **Run as administrator**.
+1. **Open Windows Terminal / Powershell as Administrator**  
 
 2. **Clone the repo into the protected path**  
    ```powershell
-   git clone https://github.com/USERNAME/RightClickCopyCode.git "C:\Program Files\CopyCode"
+   git clone https://github.com/zappybiby/RightClickCopyCode.git "C:\Program Files\CopyCode"
    ```
 
 3. **Change into the install directory**  
@@ -72,10 +68,6 @@ reminds you and lets you cancel or proceed.
    - Compiles `CopyCode.ps1` → `CopyCode.exe`  
    - Registers the **Copy code** context-menu entry  
    - Prompts to install **PS2EXE** if it’s not already available
-
-6. **Finish up**  
-   - If prompted, restart Explorer or sign off/on so the **Copy code** entry appears in your right-click menu.
-
 
 ## ✂️ Using “Copy Code”
 

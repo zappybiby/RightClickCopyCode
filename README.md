@@ -8,7 +8,7 @@ for chats, issues, docs, or pull requests with syntax highlighting.
 
 ## 🔍 How It Works
 
-1. **`CopyCode.ps1`** reads the file and puts something like this on your clipboard:
+1. After installation, you can right click a file, e.g. `hello.py` and select "Copy Code". This will copy it in this format:
 
     ~~~text
     hello.py (C:\Projects\hello.py)
